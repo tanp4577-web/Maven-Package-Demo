@@ -1,5 +1,4 @@
 pipeline {
-
     agent any
 
     tools {
@@ -26,7 +25,5 @@ pipeline {
                 bat 'java -cp target\\maven-package-demo-1.0.jar com.example.App'
             }
         }
-
     }
 }
-            
