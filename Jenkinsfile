@@ -10,8 +10,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: '**']], extension: []),
-                userRemoteConfigs:  [[url: 'https://github.com/tanp4577-web/Maven-Package-Demo.git']]
+                git branch: 'main',
+                    url: 'https://github.com/tanp4577-web/Maven-Package-Demo.git'
             }
         }
 
@@ -29,3 +29,4 @@ pipeline {
 
     }
 }
+            
